@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #ffeaf3);
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.page.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-page {
+  background: none;
+}
+
+.video-page video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.75);
+  z-index: -1;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.35);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  max-width: 90%;
+}
+
+.typewriter {
+  white-space: pre-wrap;
+  letter-spacing: 0.4px;
+  word-spacing: 4px;
+}
+
+button.next {
+  margin-top: 25px;
+  padding: 14px 34px;
+  border-radius: 30px;
+  border: none;
+  background: #ff5c7a;
+  color: white;
+  font-size: 1rem;
+}
+
+.polaroid {
+  width: 220px;
+  border-radius: 12px;
+}
+
+.lyrics {
+  width: 260px;
+  margin: 20px 0;
+}
