@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 🩵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page active" id="page1">
+  <h1 class="typewriter" data-text="Hey 👀"></h1>
+  <p class="typewriter" data-text="I made something for you"></p>
+  <button onclick="showPage(2)">Next</button>
+</div>
+
+<div class="page" id="page2">
+  <h1 class="typewriter" data-text="Show this to friends 😌"></h1>
+  <p class="typewriter subtext" data-text="Favleen & Nunu"></p>
+  <button onclick="showPage(3)">Next</button>
+</div>
+
+<!-- VIDEO PAGES -->
+<div class="page video-page" id="page3">
+  <video class="bg-video" autoplay muted loop playsinline src="video1.mp4"></video>
+  <div class="overlay typewriter"
+       data-text="Tum paas hoti ho na, cheezein bina reason better lagti hain 💗"></div>
+  <button onclick="showPage(4)">Next</button>
+</div>
+
+<div class="page video-page" id="page4">
+  <video class="bg-video" autoplay muted loop playsinline src="video2.mp4"></video>
+  <div class="overlay typewriter"
+       data-text="No drama, no filters — bas tum ✨"></div>
+  <button onclick="showPage(5)">Next</button>
+</div>
+
+<div class="page video-page" id="page5">
+  <video class="bg-video" autoplay muted loop playsinline src="video3.mp4"></video>
+  <div class="overlay typewriter"
+       data-text="Tumhari presence hi kaafi hoti hai 🖤"></div>
+  <button onclick="showPage(6)">Next</button>
+</div>
+
+<div class="page video-page" id="page6">
+  <video class="bg-video" autoplay muted loop playsinline src="video4.mp4"></video>
+  <div class="overlay typewriter"
+       data-text="Sab kuch thoda slow aur calm lagta hai 🌙"></div>
+  <button onclick="showPage(7)">Next</button>
+</div>
+
+<div class="page video-page" id="page7">
+  <video class="bg-video" autoplay muted loop playsinline src="video5.mp4"></video>
+  <div class="overlay typewriter"
+       data-text="Bas tum ho… baaki sab secondary ho jaata hai 💫"></div>
+  <button onclick="showPage(8)">Next</button>
+</div>
+
+<div class="page" id="page8">
+  <p class="typewriter long-text"
+     data-text="This is my first time and ik tujhe bhot proposal aaye h, and mujhe bhe krte hue thoda sa dar lg rha tha ke mujhe bhe reject na kr de 😅 but maine chance liya and it was a yes, and sach m mai itna khush kbhi nhi hua. It wasn't just that you are beautiful, it was something mysterious 🌌. Every time I see you m automatically khush hojata hu. Sorry mai tere sath is time pr nhi hua, but itni surety deta hu ke aage isse bhe zyada special krunga 😊 hope karta hu tujhe ye sab pasand aaye, kyuki ismey sach m bhot mehnat lgi h 🧸">
+  </p>
+  <button onclick="showPage(9)">Next</button>
+</div>
+
+<div class="page" id="page9">
+  <div id="giftBox">🎁</div>
+  <div id="polaroid">
+    <img src="polaroid.jpg">
+    <div class="polaroid-text">I love you 🩵</div>
+  </div>
+  <button onclick="showPage(10)">Next</button>
+</div>
+
+<div class="page" id="page10">
+  <h1 class="typewriter" data-text="Listen 🎧"></h1>
+  <audio controls src="song1.mp3"></audio>
+  <audio controls src="song2.mp3"></audio>
+  <button onclick="showPage(11)">Next</button>
+</div>
+
+<div class="page" id="page11">
+  <h1 class="typewriter" data-text="This song… says a lot 🎶"></h1>
+  <img src="lyrics.jpg" class="lyrics-img">
+  <p class="typewriter lyrics-line"
+     data-text="Har line sunke lagta hai, jaise ye tumhare liye likha ho 💙"></p>
+  <button onclick="showPage(12)">Next</button>
+</div>
+
+<div class="page" id="page12">
+  <h1 class="typewriter"
+      data-text="Would you go on a movie date with me? 🎬🍿"></h1>
+  <p class="typewriter"
+     data-text="(want fun then tap NO button)"></p>
+  <div class="choices">
+    <button id="yesBtn">YES 💖</button>
+    <button id="noBtn">NO 🙄</button>
+  </div>
+</div>
+
+<div class="page" id="page13">
+  <h1 class="typewriter" data-text="Favleen do the honours 💖"></h1>
+  <button onclick="showPage(14)">Next</button>
+</div>
+
+<div class="page" id="page14">
+  <h1 class="typewriter" data-text="Thank you for reading 🖤"></h1>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
