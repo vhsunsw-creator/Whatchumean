@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 🩵</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- PAGE 1 -->
+  <section class="page active">
+    <h1 class="type">Hey… I made something for you 🩵</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 2 -->
+  <section class="page">
+    <h1 class="type">Show this to friends 😌</h1>
+    <p class="type sub">Favleen & Nunu</p>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section class="page video-page">
+    <video src="video1.mp4" autoplay muted loop playsinline></video>
+    <h1 class="type overlay">Tum paas hoti ho na, cheezein bina reason better lagti hain 💗</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 4 -->
+  <section class="page video-page">
+    <video src="video2.mp4" autoplay muted loop playsinline></video>
+    <h1 class="type overlay">No drama, no filters — bas tum ✨</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 5 -->
+  <section class="page video-page">
+    <video src="video3.mp4" autoplay muted loop playsinline></video>
+    <h1 class="type overlay">Tumhari presence hi kaafi hoti hai 🖤</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 6 -->
+  <section class="page video-page">
+    <video src="video1.mp4" autoplay muted loop playsinline></video>
+    <h1 class="type overlay">Sab kuch thoda slow aur calm lagta hai 🌙</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 7 -->
+  <section class="page video-page">
+    <video src="video2.mp4" autoplay muted loop playsinline></video>
+    <h1 class="type overlay">Bas tum ho… aur baaki sab secondary 💫</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 8 -->
+  <section class="page">
+    <p class="type long">
+This is my first time and ik tujhe bhot proposal aaye h, aur mujhe bhe krte hue thoda sa dr lg rha tha ke mujhe bhe reject na kr de 😅
+but maine chance liya and it was a yes, and sach m mai itna khush kbhi nhi hua.
+It wasn't the only fact that you are beautiful, it was something else something mysterious.
+I don't have a name for it but it always kept me wanting you 🌌
+but everytime I see you m automatically khush hojata hu.
+Sorry mai tere sath es time pr nhi hua, but itni surety deta hu ke aage isse bhe zyada special krunga 😊
+hope karta hu tujhe ye sb pasand aaye, kyuki ismey sach m bhot mehnat lgi h 🧸
+    </p>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 9 -->
+  <section class="page">
+    <div class="polaroid" onclick="openPolaroid()">
+      <div class="cover">🎁</div>
+      <img src="polaroid.jpg">
+      <p>I love you 🩵</p>
+    </div>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 10 -->
+  <section class="page">
+    <h1 class="type">Listen 🎧</h1>
+    <audio controls src="audio1.mp3"></audio>
+    <audio controls src="audio2.mp3"></audio>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 11 -->
+  <section class="page">
+    <h1 class="type">Would you go on a movie date with me? 🎬🍿</h1>
+    <p class="type sub">(want fun then tap NO button)</p>
+    <div class="choices">
+      <button id="yes" onclick="yesClicked()">YES 😍</button>
+      <button id="no" onmouseover="moveNo()">NO 🙄</button>
+    </div>
+  </section>
+
+  <!-- PAGE 12 -->
+  <section class="page">
+    <h1 class="type">Favleen do the honours 💖</h1>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <!-- PAGE 13 -->
+  <section class="page">
+    <h1 class="type">Thank you for reading 🩵</h1>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
