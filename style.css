@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* PAGE */
+.page {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page.active {
+  display: flex;
+}
+
+/* PINK BACKGROUND */
+.pink {
+  background: linear-gradient(135deg, #ffd6e8, #ffeaf3);
+}
+
+/* VIDEO */
+.video {
+  position: relative;
+  color: white;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) brightness(0.75);
+  z-index: -2;
+}
+
+.video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: -1;
+}
+
+/* OVERLAY */
+.overlay {
+  background: rgba(0,0,0,0.4);
+  padding: 22px 30px;
+  border-radius: 18px;
+  max-width: 90%;
+  font-size: 22px;
+}
+
+/* TEXT */
+.typewriter {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.long-text {
+  max-width: 92%;
+  font-size: 18px;
+}
+
+/* VALENTINE FINAL */
+.valentines {
+  font-family: 'Dancing Script', cursive;
+  font-size: 42px;
+  color: #d6336c;
+  letter-spacing: 1px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 25px;
+  padding: 14px 36px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #ff5c7a;
+  color: white;
+  cursor: pointer;
+}
+
+/* AUDIO */
+audio {
+  margin: 12px 0;
+}
+
+/* LYRICS */
+.lyrics {
+  width: 85%;
+  max-width: 320px;
+  margin: 20px 0;
+  border-radius: 16px;
+}
+
+/* GIFT */
+#giftBox {
+  font-size: 90px;
+  cursor: pointer;
+  animation: bounce 1.4s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-12px); }
+}
+
+#polaroid {
+  display: none;
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+#polaroid img {
+  width: 240px;
+  border-radius: 10px;
+}
+
+/* MOVIE */
+.choices {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+#yesBtn {
+  transition: transform 0.3s ease;
+}
+
+#noBtn {
+  position: absolute;
+}
